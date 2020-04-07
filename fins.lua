@@ -4,6 +4,6 @@
 
 //It also has a configurable wear value, typically set to 300 seconds (5 minutes), feel free to modify as you see fit
 
-//Uses on-register globalstep to verify when you are on land or in water. 
+//Uses on-register globalstep to verify when you are on land or in water. 0.5 phsyics if out, 1.5 physics if in.
 
 
