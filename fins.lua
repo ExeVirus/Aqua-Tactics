@@ -6,4 +6,27 @@
 
 //Uses on-register globalstep to verify when you are on land or in water. 0.5 phsyics if out, 1.5 physics if in.
 
-
+//**********Dependency on 3D armor*****************
+if minetest.get_modpath('3d_armor') then
+    local boots_id = terumet.id('armboots_'..data.suffix)
+    armor:register_armor('aqua-tactics:fins', {
+        description = "Aqua Tactics Fins, Increase water move speed",
+        inventory_image = 'inv_fins.png',
+        texture = 'fins.png',
+        preview = 'preview_fins.png',
+        groups = {armor_feet=1, armor_use=500, physics_speed=1.5, flammable=1},
+        armor_groups = {fleshy=2},
+        damage_groups = {cracky=3, snappy=3, choppy=3, crumbly=3, level=1},,
+        on_equip = <function>
+})
+  
+minetest.register_craft{'aqua-tactics:fins', recipe={
+    {'', '', ''},
+    {'', '', ''}
+}}
+          
+          
+          
+          
+          
+     end //If 3D armor mod is available
