@@ -8,8 +8,8 @@
 
 //**********Dependency on 3D armor*****************
 if minetest.get_modpath('3d_armor') then
-    local boots_id = terumet.id('armboots_'..data.suffix)
-    armor:register_armor('aqua-tactics:fins', {
+    
+            armor:register_armor('aqua-tactics:fins', {
         description = "Aqua Tactics Fins, Increase water move speed",
         inventory_image = 'inv_fins.png',
         texture = 'fins.png',
@@ -17,7 +17,11 @@ if minetest.get_modpath('3d_armor') then
         groups = {armor_feet=1, armor_use=500, physics_speed=1.5, flammable=1},
         armor_groups = {fleshy=2},
         damage_groups = {cracky=3, snappy=3, choppy=3, crumbly=3, level=1},,
-        on_equip = <function>
+        on_equip = function(player, index, stack)
+                //Set Register Global fins variable to true
+                //Check if in water, if not, set physics_speed back to 0.5.
+                        
+        end,
 })
   
 minetest.register_craft{'aqua-tactics:fins', recipe={
