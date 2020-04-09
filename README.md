@@ -8,10 +8,10 @@ Minetest mod to spice up water-based battle
 ~~1. Water Cannon
     - Carried "Weapon"
     - Fires a "water shot"
-    - Water shot hits ground, spawning flowing water (not source) upon impaact
+    - Water shot hits ground, spawning flowing water (not source) upon impaact~~
 
 ~~2. Snorkle
-    - Can Breath underwater infinitely when only 2 node beneath air
+    - Can Breath underwater infinitely when only 2 node beneath air~~
     
 3. Rebreather
     - Massively increases breath when underwater
@@ -38,7 +38,7 @@ Minetest mod to spice up water-based battle
     - Player takes 1/4 damage while inside
     
 ~~8. Goggles
-    - Allows player to better see while underwater
+    - Allows player to better see while underwater~~
     
 9. Jet Ski jetpack
     - Warn item with shelf life
